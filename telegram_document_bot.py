@@ -58,7 +58,7 @@ def monthly_payment(amount: float, months: int, annual_rate: float) -> float:
 
 def _styles():
     styles = getSampleStyleSheet()
-    styles.add(ParagraphStyle(name="Header", alignment=TA_CENTER, fontSize=14, fontName="Helvetica-Bold"))
+    styles.add(ParagraphStyle(name="Header", alignment=TA_CENTER, fontSize=14, fontName="Helvetica-Bold", leading=18))
     styles.add(ParagraphStyle(name="Body", fontSize=11, leading=15))
     return styles
 
