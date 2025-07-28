@@ -162,9 +162,9 @@ def _letter_common(subject: str, body: str) -> BytesIO:
         elems.append(Image(LOGO_PATH, width=4*cm, height=4*cm))
         elems.append(Spacer(1, 8))
     elems.append(Paragraph("Ufficio Crediti Clientela Privata", s["Header"]))
-    elems.append(Spacer(1, 10))
+    elems.append(Spacer(1, 8))
     elems.append(Paragraph(f"<b>Oggetto:</b> {subject}", s["Body"]))
-    elems.append(Spacer(1, 14))
+    elems.append(Spacer(1, 12))
     elems.append(Paragraph(body, s["Body"]))
     elems.append(Spacer(1, 24))
     if os.path.exists(SIGNATURE_PATH):
