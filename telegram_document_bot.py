@@ -74,6 +74,7 @@ def build_contratto(data: dict) -> BytesIO:
     e = []
     # Шапка
     e.append(Paragraph("Intesa Sanpaolo S.p.A.", s["Header"]))
+    e.append(Spacer(1, 8))
     e.append(Paragraph("Sede legale: Piazza San Carlo, 156 – 10121 Torino", s["Body"]))
     e.append(Paragraph("Capitale sociale € 10.368.870.930,08 – P.IVA 10810700015", s["Body"]))
     e.append(Paragraph("Registro Imprese di Torino – ABI 03069.9", s["Body"]))
